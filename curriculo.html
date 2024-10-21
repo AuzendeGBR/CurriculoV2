@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo - Rafael Arcanjo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        .profile-img {
+            width: 150px;
+            border-radius: 50%;
+        }
+        .section-title {
+            color: #0073b1;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #777;
+        }
+        .icons a {
+            margin: 0 10px;
+        }
+        .icons img {
+            width: 24px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header class="text-center p-4 mb-4 bg-white shadow rounded">
+            <h1>Rafael Arcanjo</h1>
+            <img src="minhafoto.png.jpeg" alt="Foto de Rafael Arcanjo" class="profile-img shadow">
+            <address class="mt-3">
+                <p>Email: <a href="mailto:rafaelarcanjods05@gmail.com">rafaelarcanjods05@gmail.com</a></p>
+                <p>Telefone: <a href="tel:+5581971080053">(81) 97108-0053</a></p>
+                <div class="icons">
+                    <a href="https://www.linkedin.com/in/rafael-arcanjo-0647962a0/" target="_blank">
+                        <img src="linkedin-icon.png.jpeg" alt="LinkedIn">
+                    </a>
+                    <a href="https://github.com/AuzendeGBR" target="_blank">
+                        <img src="github-icon.png.jpeg" alt="GitHub">
+                    </a>
+                </div>
+            </address>
+        </header>
+
+        <section class="bg-white p-4 mb-4 shadow rounded">
+            <h2 class="section-title">Objetivo</h2>
+            <p>Buscando uma oportunidade de estágio na área de desenvolvimento web para aplicar conhecimentos adquiridos em Análise e Desenvolvimento de Sistemas.</p>
+        </section>
+
+        <section class="bg-white p-4 mb-4 shadow rounded">
+            <h2 class="section-title">Educação</h2>
+            <ul class="list-unstyled">
+                <li><strong>Bacharel em Análise e Desenvolvimento de Sistemas</strong> - Senac-PE (2024-2027)</li>
+                <li><strong>Ensino Médio</strong> - Colégio Anglo (2023)</li>
+            </ul>
+        </section>
+
+        <section class="bg-white p-4 mb-4 shadow rounded">
+            <h2 class="section-title">Habilidades</h2>
+            <ul class="list-unstyled">
+                <li>HTML, CSS, Python, Figma, JavaScript</li>
+                <li>Conhecimento em PHP e MySQL</li>
+                <li>Trabalho em equipe e comunicação</li>
+                <li>Resolução de problemas e raciocínio lógico</li>
+                <li>Inglês Intermediário</li>
+            </ul>
+        </section>
+
+        <section class="bg-white p-4 mb-4 shadow rounded">
+            <h2 class="section-title">Experiência</h2>
+            <p>Atualmente sem experiência profissional, mas em busca de oportunidades para colocar em prática o conhecimento teórico adquirido.</p>
+        </section>
+
+        <section class="bg-white p-4 mb-4 shadow rounded">
+            <h2 class="section-title">Projetos</h2>
+            <ul class="list-unstyled">
+                <li><strong>Pyro Alert:</strong> Projeto de sensor de baixo custo para detecção de incêndios em pequenas e médias propriedades rurais.</li>
+            </ul>
+        </section>
+
+        <!-- Formulário de Contato -->
+        <section class="bg-white p-4 mb-4 shadow rounded">
+            <h2 class="section-title">Formulário de Contato</h2>
+            <form id="contactForm" enctype="multipart/form-data" novalidate>
+                <fieldset>
+                    <legend>Entre em contato</legend>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="firstName">Nome</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="Seu nome" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="lastName">Sobrenome</label>
+                            <input type="text" class="form-control" id="lastName" placeholder="Seu sobrenome" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Telefone</label>
+                        <input type="text" class="form-control" id="phone" placeholder="(99) 99999-9999" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" class="form-control" id="email" placeholder="exemplo@dominio.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensagem</label>
+                        <textarea class="form-control" id="message" rows="4" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="language">Língua aplicada no serviço</label>
+                        <select class="form-control" id="language" required>
+                            <option>Inglês</option>
+                            <option>Espanhol</option>
+                            <option>Francês</option>
+                            <option>Português (pt-br)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="fileUpload">Upload de protótipo</label>
+                        <input type="file" class="form-control-file" id="fileUpload" accept=".pdf, .doc, .docx, .jpeg, .png" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Linguagens preferidas</label>
+                        <select multiple class="form-control" id="preferredLanguages">
+                            <option>Python</option>
+                            <option>JavaScript</option>
+                            <option>Java</option>
+                            <option>C#</option>
+                            <option>PHP</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Banco de dados recomendado</label><br>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="database" id="mysql" value="MySQL" required>
+                            <label class="form-check-label" for="mysql">MySQL</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="database" id="postgresql" value="PostgreSQL" required>
+                            <label class="form-check-label" for="postgresql">PostgreSQL</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="meetingTime">Turno de preferência para reuniões</label>
+                        <select class="form-control" id="meetingTime" required>
+                            <option>Manhã</option>
+                            <option>Tarde</option>
+                            <option>Noite</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="bestTime">Melhor horário para reunião</label>
+                        <input type="time" class="form-control" id="bestTime" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="deliveryDate">Previsão de entrega</label>
+                        <input type="date" class="form-control" id="deliveryDate" required>
+                    </div>
+                    <button type="reset" class="btn btn-secondary">Limpar</button>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </fieldset>
+            </form>
+        </section>
+
+        <footer>
+            <p>Obrigado pela consideração!</p>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            if (this.checkValidity() === false) {
+                event.stopPropagation();
+                alert("Por favor, preencha todos os campos obrigatórios.");
+            } else {
+                alert("Formulário enviado com sucesso!");
+               
